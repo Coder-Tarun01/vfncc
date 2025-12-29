@@ -9,6 +9,11 @@ RewriteRule ^ - [L]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
+# Exclude assets, images, and other static files from rewriting
+# Handle both root and subdirectory deployments
+RewriteCond %{REQUEST_URI} ^/(vfncc/)?(assets|images|facilities|sports|committe|uploads)/ [NC]
+RewriteRule ^ - [L]
+
 # API Routing
 # Auth endpoints
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -39,6 +44,19 @@ RewriteRule ^api/media/([0-9]+)$ api/media.php?action=delete&id=$1 [QSA,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]
+
+# Set proper MIME types for assets
+<IfModule mod_mime.c>
+    AddType application/javascript js
+    AddType text/css css
+    AddType image/png png
+    AddType image/jpeg jpg jpeg
+    AddType image/gif gif
+    AddType image/webp webp
+    AddType video/mp4 mp4
+    AddType video/quicktime mov
+    AddType application/pdf pdf
+</IfModule>
 
 # Security: Prevent access to data directory JSON files
 <FilesMatch "\.(json)$">
