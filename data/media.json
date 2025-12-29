@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "filename": "1766988895-901998601.jpeg",
+        "original_filename": "WhatsApp Image 2025-12-23 at 5.50.19 PM (1).jpeg",
+        "filepath": "\/uploads\/1766988895-901998601.jpeg",
+        "file_type": "image",
+        "file_size": 136109,
+        "uploaded_by": 1,
+        "uploaded_at": "2025-12-29 06:14:55"
+    },
+    {
+        "id": 2,
+        "filename": "1766988899-105493714.jpeg",
+        "original_filename": "WhatsApp Image 2025-12-23 at 5.50.19 PM.jpeg",
+        "filepath": "\/uploads\/1766988899-105493714.jpeg",
+        "file_type": "image",
+        "file_size": 167280,
+        "uploaded_by": 1,
+        "uploaded_at": "2025-12-29 06:14:59"
+    },
+    {
+        "id": 3,
+        "filename": "1766988902-324491020.jpeg",
+        "original_filename": "WhatsApp Image 2025-12-23 at 5.50.20 PM (1).jpeg",
+        "filepath": "\/uploads\/1766988902-324491020.jpeg",
+        "file_type": "image",
+        "file_size": 503532,
+        "uploaded_by": 1,
+        "uploaded_at": "2025-12-29 06:15:02"
+    },
+    {
+        "id": 4,
+        "filename": "1766988904-780870855.jpeg",
+        "original_filename": "WhatsApp Image 2025-12-23 at 5.50.20 PM.jpeg",
+        "filepath": "\/uploads\/1766988904-780870855.jpeg",
+        "file_type": "image",
+        "file_size": 130595,
+        "uploaded_by": 1,
+        "uploaded_at": "2025-12-29 06:15:04"
+    },
+    {
+        "id": 5,
+        "filename": "1766988906-423162623.jpeg",
+        "original_filename": "WhatsApp Image 2025-12-23 at 5.50.21 PM (1).jpeg",
+        "filepath": "\/uploads\/1766988906-423162623.jpeg",
+        "file_type": "image",
+        "file_size": 192108,
+        "uploaded_by": 1,
+        "uploaded_at": "2025-12-29 06:15:06"
+    },
+    {
+        "id": 6,
+        "filename": "1766988908-686355309.jpeg",
+        "original_filename": "WhatsApp Image 2025-12-23 at 5.50.21 PM (2).jpeg",
+        "filepath": "\/uploads\/1766988908-686355309.jpeg",
+        "file_type": "image",
+        "file_size": 243145,
+        "uploaded_by": 1,
+        "uploaded_at": "2025-12-29 06:15:08"
+    },
+    {
+        "id": 7,
+        "filename": "1766988910-133515863.jpeg",
+        "original_filename": "WhatsApp Image 2025-12-23 at 5.50.21 PM.jpeg",
+        "filepath": "\/uploads\/1766988910-133515863.jpeg",
+        "file_type": "image",
+        "file_size": 718144,
+        "uploaded_by": 1,
+        "uploaded_at": "2025-12-29 06:15:10"
+    },
+    {
+        "id": 8,
+        "filename": "1766988946-215339289.mp4",
+        "original_filename": "Vizag Film Nagar Cultural Center #VFNCC.mp4",
+        "filepath": "\/uploads\/1766988946-215339289.mp4",
+        "file_type": "video",
+        "file_size": 41847076,
+        "uploaded_by": 1,
+        "uploaded_at": "2025-12-29 06:15:46"
+    }
+]

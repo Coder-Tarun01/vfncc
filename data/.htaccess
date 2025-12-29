@@ -1,0 +1,4 @@
+# Prevent direct access to JSON files
+Order deny,allow
+Deny from all
+

@@ -1,0 +1,60 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Don't rewrite if the request is for an existing file
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Don't rewrite if the request is for an existing directory
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# API Routing
+# Auth endpoints
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/auth/register$ api/auth.php?action=register [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/auth/login$ api/auth.php?action=login [QSA,L]
+
+# Media endpoints
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/media/upload$ api/media.php?action=upload [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/media/all$ api/media.php?action=all [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/media/public/images$ api/media.php?action=public-images [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/media/public/media$ api/media.php?action=public-media [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/media/([0-9]+)$ api/media.php?action=delete&id=$1 [QSA,L]
+
+# Serve React app for all other routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# Security: Prevent access to data directory JSON files
+<FilesMatch "\.(json)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# PHP Settings
+# Note: These settings should be configured in php.ini if PHP is not loaded as an Apache module
+# Uncomment the following lines if PHP is loaded as an Apache module:
+# php_value upload_max_filesize 100M
+# php_value post_max_size 100M
+# php_value max_execution_time 300
+# php_value max_input_time 300
