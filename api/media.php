@@ -65,10 +65,10 @@ function handleUpload() {
         sendJson(['error' => $errorMessages[$file['error']] ?? 'Unknown upload error'], 400);
     }
     
-    // Check file size (100MB limit)
-    $maxSize = 100 * 1024 * 1024; // 100MB
+    // Check file size (50GB limit)
+    $maxSize = 50 * 1024 * 1024 * 1024; // 50GB
     if ($file['size'] > $maxSize) {
-        sendJson(['error' => 'File too large. Maximum size is 100MB.'], 400);
+        sendJson(['error' => 'File too large. Maximum size is 50GB.'], 400);
     }
     
     // Validate file type

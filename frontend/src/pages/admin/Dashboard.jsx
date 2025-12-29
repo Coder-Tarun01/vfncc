@@ -30,7 +30,7 @@ const Dashboard = () => {
       } else {
         setMedia(data);
       }
-    } catch (err) {
+    } catch {
       setError('Failed to load media');
     } finally {
       setLoading(false);
@@ -52,7 +52,7 @@ const Dashboard = () => {
         await fetchMedia(); // Refresh media list
         e.target.value = ''; // Reset input
       }
-    } catch (err) {
+    } catch {
       setError('Failed to upload file');
     } finally {
       setUploading(false);
@@ -69,7 +69,7 @@ const Dashboard = () => {
       } else {
         await fetchMedia(); // Refresh media list
       }
-    } catch (err) {
+    } catch {
       setError('Failed to delete media');
     }
   };
@@ -130,7 +130,7 @@ const Dashboard = () => {
                 ) : (
                   <div className="space-y-1">
                     <p className="text-gray-900 font-semibold">Click to select file</p>
-                    <p className="text-gray-600 text-sm">Images, Videos, or PDFs (Max 10MB)</p>
+                    <p className="text-gray-600 text-sm">Images, Videos, or PDFs (Max 50GB)</p>
                   </div>
                 )}
               </div>
