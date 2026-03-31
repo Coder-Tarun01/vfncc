@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -41,6 +41,26 @@ const App = () => {
         <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
         <Route path="/about" element={<PublicLayout><About /></PublicLayout>} />
         <Route path="/facilities" element={<PublicLayout><Facilities /></PublicLayout>} />
+        <Route
+          path="/facilities/children-pickle-ball-court"
+          element={<Navigate to="/facilities/childrens-play-area" replace />}
+        />
+        <Route
+          path="/facilities/ac-double-room"
+          element={<Navigate to="/facilities/parking-space" replace />}
+        />
+        <Route
+          path="/facilities/home-theatre"
+          element={<Navigate to="/facilities/open-air-theatre" replace />}
+        />
+        <Route
+          path="/facilities/food-court"
+          element={<Navigate to="/facilities/dining-hall" replace />}
+        />
+        <Route
+          path="/facilities/banquet-halls"
+          element={<Navigate to="/facilities/lawns-abutting-sea" replace />}
+        />
         <Route path="/facilities/:facilityId" element={<PublicLayout><FacilityDetail /></PublicLayout>} />
         <Route path="/sports" element={<PublicLayout><Sports /></PublicLayout>} />
         <Route path="/sports/:sportId" element={<PublicLayout><SportDetail /></PublicLayout>} />

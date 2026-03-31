@@ -7,8 +7,8 @@ const sports = [
     title: 'Billiards',
     slug: 'billiards',
     description: 'Tournament-grade tables, coaching assistance, and a relaxed lounge vibe.',
-      image: getAssetPath('/sports/a-32.png'),
-    },
+    image: getAssetPath('/facilities/EachFacility/gallary_images/billiards.jpeg'),
+  },
   {
     title: 'Beach Volley Ball',
     slug: 'beach-volley-ball',
@@ -37,7 +37,7 @@ const sports = [
     title: 'Swimming Pool',
     slug: 'swimming-pool',
     description: 'Sparkling pool with deck seating, lifeguards, and aqua fitness sessions.',
-    image: getAssetPath('/sports/a-37.png'),
+    image: getAssetPath('/facilities/EachFacility/gallary_images/swimmingPool.jpeg'),
   },
   {
     title: 'Squash Court',
@@ -73,7 +73,7 @@ const sports = [
     title: 'Children’s Play Area',
     slug: 'childrens-play-area',
     description: 'Safe, vibrant play spaces with supervision for little members.',
-    image: getAssetPath('/sports/a-43.png'),
+    image: getAssetPath('/facilities/EachFacility/gallary_images/kids.jpeg'),
   },
 ]
 

@@ -6,7 +6,7 @@ import { getAssetPath } from '../utils/assets'
 const sportsData = {
   'billiards': {
     title: 'Billiards',
-    image: getAssetPath('/sports/a-32.png'),
+    image: getAssetPath('/facilities/EachFacility/gallary_images/billiards.jpeg'),
     description:
       'Enjoy classic cue-sport sessions on tournament-quality tables with professional coaching and a relaxed lounge atmosphere.',
   },
@@ -36,7 +36,7 @@ const sportsData = {
   },
   'swimming-pool': {
     title: 'Swimming Pool',
-    image: getAssetPath('/sports/a-37.png'),
+    image: getAssetPath('/facilities/EachFacility/gallary_images/swimmingPool.jpeg'),
     description:
       'A sparkling swimming pool with dedicated lanes, a kids’ area, lifeguard supervision, and relaxing deck seating.',
   },
@@ -72,7 +72,7 @@ const sportsData = {
   },
   'childrens-play-area': {
     title: 'Children’s Play Area',
-    image: getAssetPath('/sports/a-43.png'),
+    image: getAssetPath('/facilities/EachFacility/gallary_images/kids.jpeg'),
     description:
       'A colorful, safe play zone where children can explore, play, and enjoy supervised activities.',
   },

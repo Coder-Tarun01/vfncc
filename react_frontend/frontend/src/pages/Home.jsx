@@ -5,50 +5,50 @@ import { getAssetPath } from '../utils/assets'
 const Home = () => {
   const facilityHighlights = [
     {
-      title: 'Banquet Halls',
-      description: 'Banquet hall is a special purpose room, or a building, used for hosting large social and business events.',
-      image: getAssetPath('/facilities/EachFacility/baquetHall.png'),
-      slug: 'banquet-halls',
+      title: 'Rooms',
+      description: 'Comfortable rooms with modern amenities, ideal for short stays and visiting members.',
+      image: getAssetPath('/facilities/EachFacility/gallary_images/rooms.jpeg'),
+      slug: 'guest-room',
     },
     {
-      title: 'Conference Halls',
-      description: 'Great conference room, along with the lobby and private executive offices, frequently create a company\'s best and longest-lasting impression.',
-      image: getAssetPath('/facilities/EachFacility/conferenceHall.png'),
+      title: 'View Point',
+      description: 'Scenic viewpoint offering breathtaking panoramic views, perfect for relaxation and photography.',
+      image: getAssetPath('/facilities/EachFacility/gallary_images/viewPoint.jpeg'),
       slug: 'conference-halls',
     },
     {
-      title: 'Family Restaurant',
-      description: 'Family style dining is a popular trend these days. It\'s a way to eat where everyone gets their own plate, staff brings the food to each person\'s.',
-      image: getAssetPath('/facilities/EachFacility/facilityrestaurent.png'),
-      slug: 'family-restaurant',
+      title: 'Dining Hall',
+      description: 'Spacious dining hall for family meals, member gatherings, and curated dining experiences in a comfortable indoor setting.',
+      image: getAssetPath('/facilities/EachFacility/gallary_images/diningHall.jpeg'),
+      slug: 'dining-hall',
     },
     {
-      title: 'Cafe',
-      description: 'Sip, savor, and indulge in every moment at our cozy café, where each cup tells a story and every bite brings delight.',
-      image: getAssetPath('/facilities/EachFacility/cafe.png'),
-      slug: 'cafe',
+      title: 'Lawns Abutting Sea',
+      description: 'Expansive sea-facing lawns ideal for outdoor gatherings, celebrations, and relaxed evenings with scenic views.',
+      image: getAssetPath('/facilities/EachFacility/gallary_images/lawns.jpeg'),
+      slug: 'lawns-abutting-sea',
     },
     {
-      title: 'SPA',
-      description: 'Therapy suites with steam and massage treatments for deep relaxation and rejuvenation.',
-      image: getAssetPath('/facilities/EachFacility/spa.png'),
-      slug: 'spa',
+      title: 'Parking Place',
+      description: 'Spacious, well-maintained parking for members and guests, with clear markings and convenient access to the club.',
+      image: getAssetPath('/facilities/EachFacility/gallary_images/parkingPlace.jpeg'),
+      slug: 'parking-space',
     },
     {
-      title: 'Home Theatre',
-      description: 'State-of-the-art home theatre with premium sound and visual systems for an immersive entertainment experience.',
-      image: getAssetPath('/facilities/EachFacility/hometheatre.png'),
-      slug: 'home-theatre',
+      title: 'Open Air Theatre',
+      description: 'Expansive open-air theatre setup for screenings, performances, and cultural evenings in a natural outdoor setting.',
+      image: getAssetPath('/facilities/EachFacility/gallary_images/openAirTheatre.jpeg'),
+      slug: 'open-air-theatre',
     },
   ]
 
   const sportHighlights = [
-    { title: 'Shuttle Badminton', description: 'Championship badminton and tennis courts with coaching.', image: 'https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=800&q=80', slug: 'shuttle-badminton' },
-    { title: 'Swimming Pool', description: 'Temperature-controlled pool with poolside seating and showers.', image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80', slug: 'swimming-pool' },
-    { title: 'GYM', description: 'Modern gym, billiards, and a vibrant children\'s play arena.', image: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80', slug: 'gym' },
-    { title: 'Billiards', description: 'Tournament-grade tables, coaching assistance, and a relaxed lounge vibe.', image: getAssetPath('/images/billiards.png'), slug: 'billiards' },
-    { title: 'Tennis Court', description: 'Floodlit, cushioned courts with booking slots and pro gear on request.', image: getAssetPath('/images/tenniscourt.png'), slug: 'tennis-court' },
-    { title: 'Children\'s Play Area', description: 'Safe, vibrant play spaces with supervision for little members.', image: getAssetPath('/images/childrensplayarea.png'), slug: 'childrens-play-area' },
+    // { title: 'Shuttle Badminton', description: 'Championship badminton and tennis courts with coaching.', image: 'https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=800&q=80', slug: 'shuttle-badminton' },
+    // { title: 'GYM', description: 'Modern gym, billiards, and a vibrant children\'s play arena.', image: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80', slug: 'gym' },
+    { title: 'Billiards', description: 'Tournament-grade tables, coaching assistance, and a relaxed lounge vibe.', image: getAssetPath('/facilities/EachFacility/gallary_images/billiards.jpeg'), slug: 'billiards' },
+    // { title: 'Tennis Court', description: 'Floodlit, cushioned courts with booking slots and pro gear on request.', image: getAssetPath('/images/tenniscourt.png'), slug: 'tennis-court' },
+    { title: 'Children\'s Play Area', description: 'Safe, vibrant play spaces with supervision for little members.', image: getAssetPath('/facilities/EachFacility/gallary_images/kids.jpeg'), slug: 'childrens-play-area' },
+    { title: 'Swimming Pool', description: 'Temperature-controlled pool with poolside seating and showers.', image: getAssetPath('/facilities/EachFacility/gallary_images/swimmingPool.jpeg'), slug: 'swimming-pool' },
   ]
 
   return (
@@ -135,14 +135,16 @@ const Home = () => {
           <div className="grid gap-6 lg:grid-cols-3">
             {facilityHighlights.map((item) => (
               <Link key={item.title} to={`/facilities/${item.slug}`} className="glass rounded-2xl overflow-hidden group hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#720000] transition-colors">{item.title}</h3>
+                <div className="relative h-52">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/35 to-transparent p-4">
+                    <h3 className="text-2xl font-semibold text-white transition-colors">{item.title}</h3>
+                  </div>
                 </div>
               </Link>
             ))}
@@ -251,22 +253,22 @@ const Home = () => {
                 <option value="" disabled>
                   Select facility
                 </option>
-              <option>Banquet Halls</option>
-              <option>Conference Halls</option>
+              <option>Lawns Abutting Sea</option>
+              <option>View Point</option>
               <option>Family Restaurant</option>
-              <option>Food Court</option>
+              <option>Dining Hall</option>
               <option>Cafe</option>
               <option>Patio</option>
               <option>SPA</option>
               <option>Pub</option>
-              <option>Home Theatre</option>
+              <option>Open Air Theatre</option>
               <option>Library</option>
               <option>NTR Lawn</option>
               <option>Liquor Roof Garden</option>
-              <option>AC Double Room</option>
+              <option>Parking Space</option>
               <option>Party Room</option>
               <option>Suite Room</option>
-              <option>Children Pickle Ball Court</option>
+              <option>{'Children\'s Play Area'}</option>
               </select>
               <input
                 type="date"

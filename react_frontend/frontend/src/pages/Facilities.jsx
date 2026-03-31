@@ -4,15 +4,15 @@ import { getAssetPath } from '../utils/assets'
 
 const facilities = [
   {
-    title: 'Banquet Halls',
-    description: 'Banquet hall is a special purpose room, or a building, used for hosting large social and business events.',
-    image: getAssetPath('/facilities/baquethall.png'),
-    slug: 'banquet-halls',
+    title: 'Lawns Abutting Sea',
+    description: 'Expansive sea-facing lawns ideal for outdoor gatherings, celebrations, and relaxed evenings with scenic views.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/lawns.jpeg'),
+    slug: 'lawns-abutting-sea',
   },
   {
-    title: 'Conference Halls',
-    description: 'Great conference room, along with the lobby and private executive offices, frequently create a company\'s best and longest-lasting impression.',
-    image: getAssetPath('/facilities/ConferenceHall.png'),
+    title: 'View Point',
+    description: 'Scenic viewpoint offering breathtaking panoramic views, perfect for relaxation and photography.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/viewPoint.jpeg'),
     slug: 'conference-halls',
   },
   {
@@ -22,10 +22,10 @@ const facilities = [
     slug: 'family-restaurant',
   },
   {
-    title: 'Food Court',
-    description: 'Indulge in a world of flavors and culinary delights at our vibrant food court, where every bite is a journey of satisfaction.',
-    image: getAssetPath('/facilities/foodcourt.png'),
-    slug: 'food-court',
+    title: 'Dining Hall',
+    description: 'Spacious dining hall for family meals, member gatherings, and curated dining experiences in a comfortable indoor setting.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/diningHall.jpeg'),
+    slug: 'dining-hall',
   },
   {
     title: 'Cafe',
@@ -52,10 +52,10 @@ const facilities = [
     slug: 'pub',
   },
   {
-    title: 'Home Theatre',
-    description: 'State-of-the-art home theatre with premium sound and visual systems for an immersive entertainment experience.',
-    image: getAssetPath('/facilities/hometheatre.png'),
-    slug: 'home-theatre',
+    title: 'Open Air Theatre',
+    description: 'Expansive open-air theatre setup for screenings, performances, and cultural evenings in a natural outdoor setting.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/openAirTheatre.jpeg'),
+    slug: 'open-air-theatre',
   },
   {
     title: 'Library',
@@ -76,10 +76,10 @@ const facilities = [
     slug: 'liquor-roof-garden',
   },
   {
-    title: 'AC Double Room',
-    description: 'Comfortable air-conditioned double rooms with modern amenities for a relaxing stay.',
-    image: getAssetPath('/facilities/AcDoubleRoom.png'),
-    slug: 'ac-double-room',
+    title: 'Parking Space',
+    description: 'Spacious, well-maintained parking for members and guests, with clear markings and convenient access to the club.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/parkingPlace.jpeg'),
+    slug: 'parking-space',
   },
   {
     title: 'Party Room',
@@ -94,10 +94,10 @@ const facilities = [
     slug: 'suite-room',
   },
   {
-    title: 'Children Pickle Ball Court',
-    description: 'Dedicated pickle ball court for children, providing a safe and fun environment for young players.',
-    image: getAssetPath('/facilities/childrenPickleBallCourt.png'),
-    slug: 'children-pickle-ball-court',
+    title: 'Children\'s Play Area',
+    description: 'Safe, vibrant play spaces with supervision for little members.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/kids.jpeg'),
+    slug: 'childrens-play-area',
   },
   {
     title: 'PDR Room',
@@ -114,7 +114,7 @@ const facilities = [
   {
     title: 'View Point',
     description: 'Scenic viewpoint offering breathtaking panoramic views, perfect for relaxation and photography.',
-    image: getAssetPath('/facilities/EachFacility/viewpoint1.png'),
+    image: getAssetPath('/facilities/EachFacility/gallary_images/viewPoint.jpeg'),
     slug: 'view-point',
   },
   {
@@ -138,7 +138,7 @@ const facilities = [
   {
     title: 'Swimming Pool',
     description: 'Sparkling swimming pool with dedicated lanes, a kids\' area, lifeguard supervision, and relaxing deck seating.',
-    image: getAssetPath('/facilities/EachFacility/swimmingpool.png'),
+    image: getAssetPath('/facilities/EachFacility/gallary_images/swimmingPool.jpeg'),
     slug: 'swimming-pool',
   },
   {

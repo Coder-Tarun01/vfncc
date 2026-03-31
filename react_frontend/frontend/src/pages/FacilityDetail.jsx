@@ -5,30 +5,30 @@ import PageHeading from '../components/PageHeading'
 import { getAssetPath } from '../utils/assets'
 
 const facilitiesData = {
-  'banquet-halls': {
-    title: 'Banquet Halls',
-    image: getAssetPath('/facilities/EachFacility/baquetHall.png'),
-    description: 'Our grand banquet halls are special purpose rooms designed for hosting large social and business events. These pillar-free spaces feature premium acoustics, elegant lighting, and contemporary interiors that create the perfect ambiance for receptions, screenings, celebrations, and corporate gatherings. With state-of-the-art AV equipment and attentive staff, we ensure your event flows effortlessly from start to finish.',
+  'lawns-abutting-sea': {
+    title: 'Lawns Abutting Sea',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/lawns.jpeg'),
+    description: 'Our sea-facing lawns provide a scenic open-air venue for events, relaxation, and photography. With lush greenery and coastal views, this space is perfect for outdoor gatherings, evening functions, and family celebrations.',
     features: [
-      'Spacious pillar-free design',
-      'Premium sound and lighting systems',
-      'Flexible seating arrangements',
-      'Professional AV equipment',
-      'Dedicated event coordination',
-      'Catering services available'
+      'Sea-facing open lawns',
+      'Ideal for outdoor events',
+      'Scenic photography backdrop',
+      'Spacious gathering area',
+      'Relaxed coastal ambiance',
+      'Well-maintained landscape'
     ]
   },
   'conference-halls': {
-    title: 'Conference Halls',
-    description: 'Our conference halls create a company\'s best and longest-lasting impression. These boardroom-style spaces are equipped with advanced audio-visual technology, perfect for press briefings, crew huddles, business meetings, and professional presentations. The elegant interiors and professional atmosphere ensure productive discussions and successful outcomes.',
-    image: getAssetPath('/facilities/EachFacility/conferenceHall.png'),
+    title: 'View Point',
+    description: 'Our scenic viewpoint offers breathtaking panoramic views, perfect for relaxation, photography, and enjoying the natural beauty of the surroundings. This elevated space provides a peaceful retreat where you can unwind, take in the stunning vistas, and capture memorable moments.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/viewPoint.jpeg'),
     features: [
-      'Professional boardroom setup',
-      'Advanced AV systems',
-      'High-speed internet connectivity',
-      'Projection and display equipment',
-      'Comfortable seating arrangements',
-      'Catering and refreshment services'
+      'Panoramic views',
+      'Perfect for photography',
+      'Peaceful retreat',
+      'Natural beauty',
+      'Relaxation space',
+      'Scenic surroundings'
     ]
   },
   'family-restaurant': {
@@ -96,18 +96,18 @@ const facilitiesData = {
       'Evening lounge atmosphere'
     ]
   },
-  'home-theatre': {
-    title: 'Home Theatre',
-    description: 'Experience state-of-the-art home theatre with premium sound and visual systems for an immersive entertainment experience. Our theatre features cutting-edge technology, comfortable seating, and exceptional acoustics, making it perfect for film screenings, presentations, or enjoying your favorite movies and shows.',
-    image: getAssetPath('/facilities/EachFacility/hometheatre.png'),
+  'open-air-theatre': {
+    title: 'Open Air Theatre',
+    description: 'Our open-air theatre offers a grand outdoor venue for film screenings, cultural programs, and special events. Surrounded by landscaped grounds, it creates a unique cinematic and performance experience under the open sky.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/openAirTheatre.jpeg'),
     charges: 'Rs. 1000 per 3 hours',
     features: [
-      'Premium sound systems',
-      'High-definition visual displays',
-      'Comfortable theatre seating',
-      'Immersive viewing experience',
-      'Perfect for screenings',
-      'Advanced AV technology'
+      'Large outdoor screening area',
+      'Open-sky event atmosphere',
+      'Ideal for cultural programs',
+      'Spacious lawn seating zone',
+      'Perfect for evening events',
+      'Scenic surroundings'
     ]
   },
   'library': {
@@ -149,31 +149,30 @@ const facilitiesData = {
       'Service on demand'
     ]
   },
-  'children-pickle-ball-court': {
-    title: 'Children Pickle Ball Court',
-    description: 'Our dedicated pickle ball court for children provides a safe and fun environment for young players. This specialized court is designed with children in mind, offering age-appropriate equipment and supervision, ensuring a safe, enjoyable experience while learning and playing this exciting sport.',
-    image: getAssetPath('/facilities/EachFacility/childrenpickleballroom.png'),
+  'childrens-play-area': {
+    title: 'Children\'s Play Area',
+    description: 'A colorful, safe play zone where children can explore, play, and enjoy supervised activities. Designed for families, with age-appropriate equipment and staff attention so little members have fun in a secure outdoor setting.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/kids.jpeg'),
     features: [
-      'Dedicated children\'s court',
-      'Safe playing environment',
-      'Age-appropriate equipment',
-      'Supervised activities',
-      'Fun learning experience',
-      'Professional coaching available'
+      'Safe, supervised play spaces',
+      'Outdoor play equipment',
+      'Family-friendly environment',
+      'Age-appropriate areas',
+      'Vibrant, engaging setting',
+      'Designed for young members'
     ]
   },
-  'food-court': {
-    title: 'Food Court',
-    description: 'CATERING TIMINGS:\n\nThe Kitchen will be open for service during the following hours on all Days:\n(i) From 07.00 AM to 10.30 AM for Breakfast\n(ii) From 12.00 Noon to 02.30 PM for Lunch\n(iii) From 05:00 PM to 10:00 PM for evening Tiffins, Snacks and Dinner',
-    // No dedicated EachFacility image, use common banquet visual
-    image: getAssetPath('/facilities/EachFacility/baquetHall.png'),
+  'dining-hall': {
+    title: 'Dining Hall',
+    description: 'DINING HALL TIMINGS:\n\nService is available daily in multiple slots for breakfast, lunch, snacks, and dinner. The hall is designed for comfortable family-style dining with ample seating and a calm indoor ambiance.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/diningHall.jpeg'),
     features: [
-      'Breakfast: 7:00 AM - 10:30 AM',
-      'Lunch: 12:00 PM - 2:30 PM',
-      'Evening & Dinner: 5:00 PM - 10:00 PM',
-      'Multiple food stations',
-      'Diverse cuisine options',
-      'Quick service available'
+      'Comfortable indoor seating',
+      'Family-style dining setup',
+      'Breakfast, lunch, and dinner service',
+      'Spacious dining layout',
+      'Suitable for member gatherings',
+      'Clean and well-maintained environment'
     ]
   },
   'liquor-roof-garden': {
@@ -190,18 +189,17 @@ const facilitiesData = {
       'Outdoor elegance'
     ]
   },
-  'ac-double-room': {
-    title: 'AC Double Room',
-    description: 'Our comfortable air-conditioned double rooms feature modern amenities for a relaxing stay. These well-appointed rooms provide a perfect retreat for guests, offering comfort, convenience, and all the essential amenities needed for a pleasant and restful experience.',
-    // No dedicated EachFacility image, use common banquet visual
-    image: getAssetPath('/facilities/EachFacility/baquetHall.png'),
+  'parking-space': {
+    title: 'Parking Space',
+    description: 'Our parking area offers generous capacity for cars and two-wheelers in a tidy, landscaped setting. Paved surfaces, shaded sections, and straightforward access make arrivals and departures smooth for members, guests, and event visitors.',
+    image: getAssetPath('/facilities/EachFacility/gallary_images/parkingPlace.jpeg'),
     features: [
-      'Air-conditioned comfort',
-      'Modern amenities',
-      'Double occupancy',
-      'Comfortable accommodations',
-      'Essential facilities',
-      'Relaxing environment'
+      'Spacious paved parking',
+      'Member and guest access',
+      'Landscaped surroundings',
+      'Organized vehicle areas',
+      'Convenient club access',
+      'Well-maintained facility'
     ]
   },
   'party-room': {
@@ -248,11 +246,7 @@ const facilitiesData = {
   'view-point': {
     title: 'View Point',
     description: 'Our scenic viewpoint offers breathtaking panoramic views, perfect for relaxation, photography, and enjoying the natural beauty of the surroundings. This elevated space provides a peaceful retreat where you can unwind, take in the stunning vistas, and capture memorable moments.',
-    image: getAssetPath('/facilities/EachFacility/viewpoint1.png'),
-    images: [
-      getAssetPath('/facilities/EachFacility/viewpoint1.png'),
-      getAssetPath('/facilities/EachFacility/viewpoint2.png')
-    ],
+    image: getAssetPath('/facilities/EachFacility/gallary_images/viewPoint.jpeg'),
     charges: 'Rs. 1000 per 3 hours',
     features: [
       'Panoramic views',
@@ -305,7 +299,7 @@ const facilitiesData = {
   'swimming-pool': {
     title: 'Swimming Pool',
     description: 'SWIMMINGPOOL:\n\nTIMINGS: will be open during the following hours: MONDAY to SUNDAY. 08.00 AM to 05.00 PM',
-    image: getAssetPath('/facilities/EachFacility/swimmingpool.png'),
+    image: getAssetPath('/facilities/EachFacility/gallary_images/swimmingPool.jpeg'),
     features: [
       'Open Monday to Sunday',
       'Timings: 8:00 AM - 5:00 PM',
@@ -411,13 +405,14 @@ const FacilityDetail = () => {
             <div className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">{facility.description}</div>
             {facility.title !== 'Cards Room' && 
              facility.title !== 'Family Restaurant' && 
-             facility.title !== 'Food Court' && 
+             facility.title !== 'Dining Hall' && 
              facility.title !== 'Cafe' && 
              facility.title !== 'Patio' && 
              facility.title !== 'Pub' &&
              facility.title !== 'Office' &&
              facility.title !== 'Swimming Pool' &&
-             facility.title !== 'Guest Room' && (
+             facility.title !== 'Guest Room' &&
+             facility.title !== 'Parking Space' && (
               <p className="text-gray-700">
                 Every venue is thoughtfully serviced with attentive staff, contemporary interiors, and technology support
                 to make your event flow effortlessly. Host celebrations, screenings, or gatherings with on-demand service
