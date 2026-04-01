@@ -59,9 +59,9 @@ const Footer = () => {
           <ul className="text-sm text-gray-400 space-y-2">
             <li>Thimmapuram, Kapuluppada</li>
             <li>Visakhapatnam, Andhra Pradesh 531163</li>
-            <li className="text-white font-medium">+91 70361 87999</li>
-            <li className="text-white font-medium">+91 (40) 23636100</li>
-            <li className="text-white font-medium">fncc123@gmail.com</li>
+            <li className="text-white font-medium">+91 9121915999</li>
+            <li className="text-white font-medium">+91 9121914999</li>
+            <li className="text-white font-medium">vfncc2017@gmail.com</li>
           </ul>
         </div>
 

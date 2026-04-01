@@ -53,15 +53,15 @@ const Contact = () => {
             </div>
             <div className="text-sm text-gray-700 space-y-1">
               <p className="font-semibold text-gray-900">Mobile</p>
-              <p>+91 70361 87999</p>
+              <p>+91 9121915999</p>
             </div>
             <div className="text-sm text-gray-700 space-y-1">
               <p className="font-semibold text-gray-900">Phone</p>
-              <p>+91 (40) 23636100</p>
+              <p>+91 9121914999</p>
             </div>
             <div className="text-sm text-gray-700 space-y-1">
               <p className="font-semibold text-gray-900">Email</p>
-              <p>fncc123@gmail.com</p>
+              <p>vfncc2017@gmail.com</p>
             </div>
           </div>
 
